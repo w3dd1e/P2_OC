@@ -4,28 +4,51 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Booki - Marseille</title>
-        <link rel="sytlesheet" href="styles.css">
-        <link rel="sytlesheet" href="normalize.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="normalize.css">
+        
 
+        <!-- FontAwesome Icons-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+        
+        <!-- Use Google Fonts Raleway -->
+            <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Raleway">
+        <style>
+            body {
+                font-family: 'Raleway', serif;
+            }
+        </style>
     </head>
     <body>
+        
+        <!-- Header -->
         <header>
-            <img class="logo" src="./images/logo/Booki.png"
+            <img class="logo" src="./images/logo/Booki.png" alt="Booki logo">
             <nav>
-                <a class="navbar" href="#">Acommodations</a>
-                <a class="navbar" href="#">Activities</a>
+                
+                    <button class="navlist active"><a href="#">Acommodations</a></button>
+                    <button class="navlist"><a  href="#">Activities</a> </button>
+                
             </nav>
-            <h3 classs="tagline">Find a place for your dream vacation</h3>
-            <p class="tagline">Downtown or in nature</p>
+
+            
         </header>
+
+
         <main>
+            <!-- Tagline -->
+
+            <h3>Find a place for your dream vacation</h3>
+            <p class="tagline">Downtown or in nature</p>
+
+            <!-- Search -->
             <form class="searchbar">
                 <input type="text" placeholder="Marseille, France">
                 <button type="submit">Search</button>
             </form>
 
+            <!-- Filters -->
             <div class="filters">
                 <h4>Filters</h4>
                 <button>Low cost</button>
@@ -34,40 +57,45 @@
                 <button>Pets Allowed</button>
             </div>
 
-            <section class="results">
+            <!-- Main Search Results -->
+            <section class="results accommodations">
                 <h3>Accomodations in Marseille</h3>
                 <ul>
-                    <li>Auberge la Canneviere</li>
-                    <li>Hotel du port</li>
-                    <li>Les mouettes Hotel</li>
-                    <li>Hotel de la mer</li>
-                    <li>Auberge Le Panier</li>
-                    <li>Hotel chez Amina</li>
+                    <li class="accommodations">Auberge la Canneviere</li>
+                    <li class="accommodations">Hotel du port</li>
+                    <li class="accommodations">Les mouettes Hotel</li>
+                    <li class="accommodations">Hotel de la mer</li>
+                    <li class="accommodations">Auberge Le Panier</li>
+                    <li class="accommodations">Hotel chez Amina</li>
                 </ul>
             </section>
 
+            <!-- Sidebar Search Results -->
             <section class="results popular">
                 <h3>Most Popular</h3>
                 <ul>
-                    <li>Morning Sun Hotel</li>
-                    <li>Au coeur de l'eau Bed and Breakfast</li>
-                    <li>Tout blue et Blanc Hotel</li>
+                    <li class="popular">Morning Sun Hotel</li>
+                    <li class="popular">Au coeur de l'eau Bed and Breakfast</li>
+                    <li class="popular">Tout blue et Blanc Hotel</li>
                 </ul>
             </section>
             
+            <!-- Bottom Related Activities Suggestions -->
             <section class="activities">
                 <h3>Activities in Marseille</h3>
                 <ul>
-                    <li>Old Port</li>
-                    <li>Pomegues Fort</li>
-                    <li>Frioul Island</li>
-                    <li>Calanques National Park</li>
-                    <li>Notre-Dame-de-la-Garde</li>
-                    <li>Longchamp Park</li>
+                    <li class="activities">Old Port</li>
+                    <li class="activities">Pomegues Fort</li>
+                    <li class="activities">Frioul Island</li>
+                    <li class="activities">Calanques National Park</li>
+                    <li class="activities">Notre-Dame-de-la-Garde</li>
+                    <li class="activities">Longchamp Park</li>
                 </ul>
             </section>
 
         </main>
+
+        <!-- Footer -->
         <footer>
             <h4 class="footer_list">About</h4>
             <ul>
