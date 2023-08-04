@@ -6,6 +6,18 @@ html {
   }
 
 /* General */
+* {
+  font-family:  "Raleway", sans-serif;
+}
+h4 {
+  font-size: 13px;
+}
+
+ul {
+  text-align: center;
+  list-style-type: none;
+  }
+
 
 
 /* Header */
@@ -13,5 +25,37 @@ html {
 
 /* Footer */
 
+footer {
+  background-color: #F2F2F2;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  
+  
+}
 
+a.footer_list {
+  text-decoration: none;
+  color: black;
+  font-size: 12px;
+  }
+
+  footer ul {
+    font-size: 12px;
+    text-align: left; 
+    
+  }
+
+  a:hover.footer_list {
+    color: #0065FC;
+  }
+
+ footer li {
+  margin: 12px;
+  margin-right: 75px;
+ }
+
+ .footer_list_3 {
+  flex-grow: 2;
+ }
 
