@@ -63,9 +63,38 @@ main {
 form.searchbar{
 margin-bottom: 30px;
 }
+input.searchbar{
+  padding: 10px;
+  font-size: 14px;
+  border-left: none;
+  border: none;
+  border: 1px solid #F2F2F2;
+  
+}
+
+button.location{
+  background-color: #F2F2F2;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  padding: 10px;
+  border: none;
+  margin-right: -5px;
+  
+}
+button.searchbar{
+  background-color: #0065FC;
+  color: white;
+  padding: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border: none;
+  margin: -5px;
+ 
+}
 
 div.filters {
   display: flex;
+ 
 }
 
 h4.filters {
@@ -74,8 +103,7 @@ h4.filters {
 }
 button.filters{
   background-color: white;
-  border-color: #DEEBFF;
-  border: 2px solid;
+  border: 1px solid #DEEBFF;
   padding: 10px;
   margin: 0 20px;
   border-radius: 30px;
