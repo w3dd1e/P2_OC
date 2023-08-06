@@ -8,8 +8,8 @@ html {
 /* General */
 * {
   font-family:  "Raleway", sans-serif;
-  
-}
+  }
+
 h4 {
   font-size: 14px;
 }
@@ -18,9 +18,7 @@ ul {
   list-style-type: none;
   }
 
- body {
-  padding: 20px;
- }
+
 
  a {
 text-decoration: none;
@@ -33,10 +31,27 @@ color: black;
 
  figcaption {
   font-size: 13px;
+  
  }
 
 
 /* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+a.navlist {
+  margin: 20px;
+
+}
+
+a.active {
+  border-top: 5px;
+  border-color: #0065FC;
+  color: #0065FC;
+}
 
 /* Main Body */
 
