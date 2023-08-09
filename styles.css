@@ -1,28 +1,21 @@
 html {
     box-sizing: border-box;
+    font-family:  "Raleway", sans-serif;
   }
   *, *:before, *:after {
     box-sizing: inherit;
   }
 
 /* General */
-* {
-  font-family:  "Raleway", sans-serif;
-  }
-
-h4 {
-  font-size: 14px;
-}
-
-ul {
-  list-style-type: none;
-  }
 
 
 
  a {
-text-decoration: none;
-color: black;
+  text-decoration: none;
+ }
+
+ a:visited {
+  color: inherit;
  }
 
  a:hover {
@@ -31,28 +24,52 @@ color: black;
 
  figcaption {
   font-size: 13px;
-  
- }
+  }
 
 
-/* Header */
-header {
+/* HEADER */
+
+nav {
+  padding:  0 30px;
+
+}
+.navbar {
+  padding: 0;
   display: flex;
-  justify-content: space-between;
-  padding: 20px;
+  margin: 0;
+  list-style-type: none;
+  gap: 50px; 
+  height: 50px;
+  align-items: stretch;
+  
 }
 
-a.navlist {
-  margin: 20px;
+.navbar__logo {
+    margin-right: auto;
+    padding-top: 20px;
 
 }
 
-a.active {
-  border-top: 5px solid;
-  border-color: #0065FC;
+.navbar__logo__img {
+  width: 40%;
+  height: auto;
+ 
+}
+
+.navbar__link {
+ font-size: 12px;
+ padding-top: 20px;
+ border-top: 3px  solid transparent;
+
+}
+
+.navbar__link--active {
   color: #0065FC;
-  padding-top: 15px;
+  border-top: 3px solid #0065FC;
+  
 }
+
+
 
 /* Main Body */
 
