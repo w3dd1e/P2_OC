@@ -56,8 +56,7 @@ nav {
 .navbar__link {
   font-size: 12px;
   padding-top: 20px;
-  border-top: 3px solid transparent  ;
-
+  border-top: 3px solid transparent;
 }
 
 .navbar__link--active {
@@ -119,8 +118,6 @@ main {
   border: none;
   font-weight: 700;
   border: 1px solid #0065fc;
-
- 
 }
 
 /* Filters*/
@@ -131,7 +128,6 @@ main {
   font-size: 13px;
   gap: 20px;
 }
-
 
 .filters__button {
   background-color: white;
@@ -164,7 +160,6 @@ main {
   color: white;
 }
 
-
 /* RESULTS */
 
 .results {
@@ -173,14 +168,13 @@ main {
   justify-content: flex-start;
   align-items: stretch;
   gap: 30px;
-  
 }
 
-.star--full{
+.star--full {
   color: #0065fc;
 }
 
-.star--empty{
+.star--empty {
   color: #deebff;
 }
 
@@ -191,7 +185,6 @@ main {
   padding: 25px;
   border-radius: 15px;
   flex: 3;
-  
 }
 .accommodations__title {
   font-size: 14px;
@@ -204,7 +197,6 @@ main {
   align-content: space-between;
   gap: 25px;
   margin: 25px 0;
-
 }
 
 .accommodations__card {
@@ -235,7 +227,6 @@ main {
   padding: 0 5px;
   font-size: 12px;
   flex: 1;
-  
 }
 
 .more {
@@ -244,9 +235,6 @@ main {
   font-size: 12px;
 }
 
-
-
-
 /* Popular */
 
 .popular {
@@ -254,7 +242,6 @@ main {
   padding: 25px;
   border-radius: 15px;
   flex: 1;
-  
 }
 
 .popular__title {
@@ -270,12 +257,11 @@ main {
 
 .popular__list {
   display: flex;
- flex-direction: column;
+  flex-direction: column;
   padding: 0px;
   list-style-type: none;
   gap: 25px;
   height: 1auto;
-  
 }
 .popular__card {
   padding: 5px;
@@ -285,7 +271,6 @@ main {
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   display: flex;
   flex: 1 1 auto;
-  
 }
 
 .popular__card:hover {
@@ -304,9 +289,7 @@ main {
 .popular__caption {
   font-size: 12px;
   flex: 2;
-  
 }
-
 
 section.activities {
   display: block;
