@@ -38,47 +38,51 @@
 
             <!-- Search -->
             <form class="searchbar">
-                <button type="button" class="location"><i class="fa-solid fa-location-dot"></i></i></button>
-                <input type="text" placeholder="Marseille, France" class="searchbar">
-                <button type="submit" class="searchbar">Search</button>
+                <button type="button" class="searchbar__location"><i class="fa-solid fa-location-dot"></i></i></button>
+                <input type="text" placeholder="Marseille, France" class="searchbar__input">
+                <button type="submit" class="searchbar__submit">Search</button>
             </form>
 
             <!-- Filters -->
             
             <div class="filters">
-                <h4 class="filters">Filters</h4>
-                <button class="filters"><i class="fa-solid fa-money-bill-wave filter_icon"></i>Low cost</button>
-                <button class="filters"><i class="fa-solid fa-child-reaching filter_icon"></i>Family-Friendly</button>
-                <button class="filters"><i class="fa-solid fa-heart filter_icon"></i>Romantic</button>
-                <button class="filters"><i class="fa-solid fa-dog filter_icon"></i>Pets Allowed</button>
+                <h4 class="filters__title">Filters</h4>
+                <button class="filters__button"><i class="fa-solid fa-money-bill-wave filters_icon"></i>Low cost</button>
+                <button class="filters__button"><i class="fa-solid fa-child-reaching filters_icon"></i>Family-friendly</button>
+                <button class="filters__button"><i class="fa-solid fa-heart filters_icon"></i>Romantic</button>
+                <button class="filters__button"><i class="fa-solid fa-dog filters_icon"></i>Pets allowed</button>
             </div>
 
             <!-- Main Search Results -->
-            <div class="main">
-            <section class="results accommodations">
-                <h3>Accomodations in Marseille</h3>
-                <ul class="accommodations">
-                    <li class="accommodations"><a href="#"><img class="accommodations" src="./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge La Cannebiere"><figcaption class="accomodations"><strong>Auberge La Cannebiere</strong></strong><br>Night starting at 25E<br><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></figcaption> </a></li>
-                    <li class="accommodations"><a href="#"><img class="accommodations" src="./images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hotel du port"><figcaption class="accomodations"><strong>Hotel du port</strong><br>Night starting at 52E<br><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></figcaption></a></li>
-                    <li class="accommodations"><a href="#"><img class="accommodations" src="./images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Les mouettes Hotel"><figcaption class="accomodations"><strong>Les mouettes Hotel</strong><br> Night starting at 76E<br><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></figcaption></a></li>
-                    <li class="accommodations"><a href="#"><img class="accommodations" src="./images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hotel de la mer"><figcaption class="accomodations"><strong>Hotel de la mer</strong><br>Night starting at 46E<br><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></figcaption></a></li>
-                    <li class="accommodations"><a href="#"><img class="accommodations" src="./images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge Le Panier"><figcaption class="accomodations"><strong>Auberge Le Panier</strong><br>Night starting at 23E<br><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></figcaption></a></li>
-                    <li class="accommodations"><a href="#"><img class="accommodations" src="./images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hotel chez Amina"><figcaption class="accomodations"><strong>Hotel chez Amina</strong><br>Night starting at 96E<br><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></figcaption></a></li>
+
+            <div class="results">
+            <section class="accommodations">
+                <h3 class="accommodations__title">Accomodations in Marseille</h3>
+                <ul class="accommodations__list">
+                    <li class="accommodations__card"><a href="#"><img class="accommodations__img" src="./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge La Cannebiere"><figcaption class="accommodations__caption"><strong>Auberge La Cannebiere</strong></strong><br>Night starting at 25E<br><i class="fa-solid fa-star star--full"></i><i class="fa-solid fa-star star--full"></i><i class="fa-solid fa-star star--full"></i><i class="fa-solid fa-star star--full"></i><i class="fa-solid fa-star star--empty"></i></figcaption> </a></li>
+                    <li class="accommodations__card"><a href="#"><img class="accommodations__img" src="./images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hotel du port"><figcaption class="accommodations__caption"><strong>Hotel du port</strong><br>Night starting at 52E<br><i class="fa-solid fa-star star--full"></i><i class="fa-solid fa-star star--full"></i><i class="fa-solid fa-star star--full"></i><i class="fa-solid fa-star star--full"></i><i class="fa-solid fa-star star--full"></i></figcaption></a></li>
+                    <li class="accommodations__card"><a href="#"><img class="accommodations__img" src="./images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Les mouettes Hotel"><figcaption class="accommodations__caption"><strong>Les mouettes Hotel</strong><br> Night starting at 76E<br><i class="fa-solid fa-star star--full"></i><i class="fa-solid fa-star star--full"></i><i class="fa-solid fa-star star--full"></i><i class="fa-solid fa-star star--full"></i><i class="fa-solid fa-star star--empty"></i></figcaption></a></li>
+                    <li class="accommodations__card"><a href="#"><img class="accommodations__img" src="./images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hotel de la mer"><figcaption class="accommodations__caption"><strong>Hotel de la mer</strong><br>Night starting at 46E<br><i class="fa-solid fa-star star--full"></i><i class="fa-solid fa-star star--full"></i><i class="fa-solid fa-star star--full"></i><i class="fa-solid fa-star star--empty"></i><i class="fa-solid fa-star star--empty"></i></figcaption></a></li>
+                    <li class="accommodations__card"><a href="#"><img class="accommodations__img" src="./images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge Le Panier"><figcaption class="accommodations__caption"><strong>Auberge Le Panier</strong><br>Night starting at 23E<br><i class="fa-solid fa-star star--full"></i><i class="fa-solid fa-star star--full"></i><i class="fa-solid fa-star star--full"></i><i class="fa-solid fa-star star--full"></i><i class="fa-solid fa-star star--empty"></i></figcaption></a></li>
+                    <li class="accommodations__card"><a href="#"><img class="accommodations__img" src="./images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hotel chez Amina"><figcaption class="accommodations__caption"><strong>Hotel chez Amina</strong><br>Night starting at 96E<br><i class="fa-solid fa-star star--full"></i><i class="fa-solid fa-star star--full"></i><i class="fa-solid fa-star star--full"></i><i class="fa-solid fa-star star--full"></i><i class="fa-solid fa-star star--full"></i></figcaption></a></li>
                 </ul>
                 <a class="more" href="#"><h4>Show more</h4></a>
             </section>
 
             <!-- Sidebar Search Results -->
-            <section class="results popular">
-                <h3>Most Popular</h3>
-                <ul class="popular">
-                    <a href="#"><li class="popular"><img class="popular" src="./images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Morning Sun Hotel"><figcaption class="popular"><strong>Morning Sun Hotel</strong><br>Night starting at 128E</figcaption></li></a>
-                    <a href="#"><li class="popular"><img class="popular" src="./images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au coeur de l'eau Bed and Breakfast"><figcaption class="popular"><strong>Au coeur de l'eau Bed and Breakfast</strong><br>Night starting at 71E</figcaption></li></a>
-                    <a href="#"><li class="popular"><img class="popular" src="./images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Tout blue et Blanc Hotel"><figcaption class="popular"><strong>Tout blue et Blanc Hotel</strong><br>Night starting at 68E</figcaption></li></a>
+
+            <section class="popular">
+                <span class="popular__title"><h3>Most Popular</h3>
+                <i class="fa-solid fa-star"></i></span>
+                <ul class="popular__list">
+                    <a href="#"><li class="popular__card"><img class="popular__img" src="./images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Morning Sun Hotel"><figcaption class="popular__caption"><strong>Morning Sun Hotel</strong><br>Night starting at 128E</figcaption></li></a>
+                    <a href="#"><li class="popular__card"><img class="popular__img" src="./images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au coeur de l'eau Bed and Breakfast"><figcaption class="popular__caption"><strong>Au coeur de l'eau Bed and Breakfast</strong><br>Night starting at 71E</figcaption></li></a>
+                    <a href="#"><li class="popular__card"><img class="popular__img" src="./images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Tout blue et Blanc Hotel"><figcaption class="popular__caption"><strong>Tout blue et Blanc Hotel</strong><br>Night starting at 68E</figcaption></li></a>
                 </ul>
             </section>
         </div>
             <!-- Bottom Related Activities Suggestions -->
+
             <section class="activities">
                 <h3>Activities in Marseille</h3>
                 <ul class="activities">
