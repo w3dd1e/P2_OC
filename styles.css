@@ -82,7 +82,7 @@ nav {
 /* MAIN */
 
 main {
-  padding: 20px;
+  padding: 30px;
 }
 
 /* Search */
@@ -171,9 +171,9 @@ main {
   display: flex;
   flex-wrap: nowrap;
   justify-content: flex-start;
-  height: 500px;
-  align-items: baseline;
-  gap: 20px;
+  align-items: stretch;
+  gap: 30px;
+  
 }
 
 .star--full{
@@ -188,8 +188,9 @@ main {
 
 .accommodations {
   background-color: #f2f2f2;
-  padding: 20px;
+  padding: 25px;
   border-radius: 15px;
+  flex: 3;
   
 }
 .accommodations__title {
@@ -201,8 +202,9 @@ main {
   padding: 0px;
   list-style-type: none;
   align-content: space-between;
-  gap: 20px;
-  margin-bottom: 35px;
+  gap: 25px;
+  margin: 25px 0;
+
 }
 
 .accommodations__card {
@@ -236,13 +238,22 @@ main {
   
 }
 
+.more {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 12px;
+}
 
-/* Popular 
-    */
+
+
+
+/* Popular */
+
 .popular {
   background-color: #f2f2f2;
-  padding: 20px;
+  padding: 25px;
   border-radius: 15px;
+  flex: 1;
   
 }
 
@@ -258,22 +269,22 @@ main {
 }
 
 .popular__list {
-  list-style-type: none;
-  padding: 0px;
   display: flex;
-  flex-direction: column;
-  align-content: space-between;
-  gap: 20px;
-  align-items: baseline;
+ flex-direction: column;
+  padding: 0px;
+  list-style-type: none;
+  gap: 25px;
+  height: 1auto;
+  
 }
 .popular__card {
   padding: 5px;
   background-color: white;
   border-radius: 15px;
-  flex: 1 0 30%;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   display: flex;
+  flex: 1 1 auto;
   
 }
 
@@ -284,11 +295,11 @@ main {
 .popular__img {
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
-  
-  width: 40%;
   object-fit: cover;
   margin-right: 10px;
   flex: 1;
+  height: 100px;
+  width: 40%;
 }
 .popular__caption {
   font-size: 12px;
@@ -296,16 +307,6 @@ main {
   
 }
 
-a.more {
-  text-decoration: none;
-  color: black;
-  font-weight: 700;
-  font-size: 12px;
-}
-
-a:hover.more {
-  color: #0065fc;
-}
 
 section.activities {
   display: block;
