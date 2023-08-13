@@ -145,7 +145,7 @@ main {
   border-left: 0px;
 }
 
-.filters_icon {
+.filters__icon {
   background-color: #deebff;
   color: #0065fc;
   padding: 10px;
@@ -161,6 +161,30 @@ main {
 .filters__button:hover {
   background-color: #0065fc;
   color: white;
+}
+
+.filters__button:hover .filters__icon {
+  background-color: #0065fc;
+  color: white;
+}
+
+
+.information  {
+  font-size: 14px;
+  margin: 0;
+  padding: 25px 0;
+  width: 40%;
+  display: flex;
+  
+}
+.info__icon {
+  
+  border: 2px solid #f2f2f2;
+  padding: 5px 10px;
+  border-radius: 50%;
+  color: #0065fc;
+  margin: 10px;
+  
 }
 
 /* RESULTS */
@@ -246,7 +270,7 @@ main {
 
 .accommodations__card__desc {
   flex: 1 auto;
-  height: 40%;
+  
   display: flex;
   flex-direction: column;
   gap: 5px;
