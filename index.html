@@ -35,9 +35,9 @@
               alt="Booki logo" />
           </li>
           <li class="navbar__link navbar__link--active">
-            <a href="#">Acommodations</a>
+            <a href="#accommodations">Accommodations</a>
           </li>
-          <li class="navbar__link"><a href="#">Activities</a></li>
+          <li class="navbar__link"><a href="#activities">Activities</a></li>
         </ul>
       </nav>
       <!-- Tagline -->
@@ -86,8 +86,10 @@
 
       <div class="results">
         <!-- Accomodations  -->
-        <section class="accommodations">
-          <div class="accommodations__title-line"><h2 class="accommodations__title">Accomodations in Marseille</h2></div>
+        <section id="Accomodations" class="accommodations">
+          <div class="accommodations__title-line">
+            <h2 class="accommodations__title">Accomodations in Marseille</h2>
+          </div>
           <ul class="accommodations__list">
             <a
               class="accommodations__card__link"
@@ -146,16 +148,13 @@
                   src="./images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
                   alt="Les mouettes Hotel" />
                 <div class="accommodations__card__desc">
-                  <h3
-                    class="accommodations__card__title">
+                  <h3 class="accommodations__card__title">
                     Les mouettes Hotel
                   </h3>
-                  <p
-                    class="accommodations__card__price">
+                  <p class="accommodations__card__price">
                     Night starting at 76E
                   </p>
-                  <p
-                    class="accommodations__card__rating">
+                  <p class="accommodations__card__rating">
                     <i class="fa-solid fa-star star--full"></i
                     ><i class="fa-solid fa-star star--full"></i
                     ><i class="fa-solid fa-star star--full"></i
@@ -321,85 +320,126 @@
       <!-- Bottom Results 
           Activities  -->
 
-      <section class="activities">
+      <section id="activities" class="activities">
         <h2 class="activities__title">Activities in Marseille</h2>
-        <ul class="activities">
-          <li class="activities">Old Port</li>
-          <li class="activities">Pomegues Fort</li>
-          <li class="activities">Frioul Island</li>
-          <li class="activities">Calanques National Park</li>
-          <li class="activities">Notre-Dame-de-la-Garde</li>
-          <li class="activities">Longchamp Park</li>
+        <ul class="activities__list">
+          <a class="activities__link"
+            ><li class="activities__card card">
+              <img
+                class="activities__img"
+                src="./images/activites/4_small/oldport.jpg" />
+              <h3 class="activities__card__title">Old Port</h3>
+            </li></a
+          >
+          <a class="activities__link"
+            ><li class="activities__card card">
+              <img
+                class="activities__img"
+                src="./images/activites/4_small/pomeguesfort.jpg" />
+              <h3 class="activities__card__title">Pomegues Fort</h3>
+            </li></a
+          >
+          <a class="activities__link"
+            ><li class="activities__card card">
+              <img
+                class="activities__img"
+                src="./images/activites/4_small/frioulisland.jpg" />
+              <h3 class="activities__card__title">Frioul Island</h3>
+            </li></a
+          >
+          <a class="activities__link"
+            ><li class="activities__card card">
+              <img
+                class="activities__img"
+                src="./images/activites/4_small/calanquesnationalpark.jpg" />
+              <h3 class="activities__card__title">Calanques National Park</h3>
+            </li></a
+          >
+          <a class="activities__link"
+            ><li class="activities__card card">
+              <img
+                class="activities__img"
+                src="./images/activites/4_small/notredamedelagarde.jpg" />
+              <h3 class="activities__card__title">Notre-Dame-de-la-Garde</h3>
+            </li></a
+          >
+          <a class="activities__link"
+            ><li class="activities__card card">
+              <img
+                class="activities__img"
+                src="./images/activites/4_small/longchamppark.jpg" />
+              <h3 class="activities__card__title">Longchamp Park</h3>
+            </li></a
+          >
         </ul>
       </section>
     </main>
 
     <!-- Footer -->
     <footer>
-      <section class="footer_list_1">
-        <ul>
-          <li><h4>About</h4></li>
+    
+        <ul class="footer__list">
+          <li><h4 class="footer__title">About</h5></li>
           <li>
             <a
-              class="footer_list"
+              class="footer__list__link"
               href="#"
               >Site Map</a
             >
           </li>
           <li>
             <a
-              class="footer_list"
+              class="footer__list__link"
               href="#"
               >General Terms and Conditions</a
             >
           </li>
           <li>
             <a
-              class="footer_list"
+              class="footer__list__link"
               href="#"
               >Data and Privacy</a
             >
           </li>
         </ul>
-      </section>
-      <section class="footer_list_2">
-        <ul>
-          <li><h4>Our Accommodations</h4></li>
+      
+        <ul class="footer__list">
+          <li><h4 class="footer__title">Our Accommodations</h4></li>
           <li>
             <a
-              class="footer_list"
+              class="footer__list__link"
               href="#"
               >Quality Assessment</a
             >
           </li>
           <li>
             <a
-              class="footer_list"
+              class="footer__list__link"
               href="#"
               >You have a hotel?</a
             >
           </li>
         </ul>
-      </section>
-      <section class="footer_list_3">
-        <ul>
-          <li><h4>Assistance</h4></li>
+      
+      
+        <ul class="footer__list">
+          <li><h4 class="footer__title">Assistance</h4></li>
           <li>
             <a
-              class="footer_list"
+              class="footer__list__link"
               href="#"
               >Help Desk</a
             >
           </li>
           <li>
             <a
-              class="footer_list"
+              class="footer__list__link"
               href="#"
               >Contact Us</a
             >
           </li>
         </ul>
-      </section>
+      
     </footer>
   </body>
 </html>
