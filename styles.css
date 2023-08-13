@@ -198,7 +198,7 @@ main {
   font-size: 14px;
   padding-top: 10px;
 }
-.accommodations__title{
+.accommodations__title {
   font-size: 16px;
   margin: 0;
 }
@@ -213,9 +213,8 @@ main {
 }
 .accommodations__card__link {
   flex: 1 30%;
-  min-width: 150px
- 
-  }
+  min-width: 150px;
+}
 
 .accommodations__card {
   padding: 5px;
@@ -229,10 +228,7 @@ main {
   justify-content: flex-start;
   margin: 0;
   height: 100%;
-  
 }
-
-
 
 .accommodations__card:hover {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
@@ -266,9 +262,9 @@ main {
 
 .accommodations__card__price {
   flex: 1;
-  margin:auto 0;
+  margin: auto 0;
 }
-.accommodations__card__rating{
+.accommodations__card__rating {
   font-size: 11px;
   margin: 0;
   flex: 0;
@@ -279,7 +275,6 @@ main {
   font-size: 14px;
   margin: 12px 0;
 }
-
 
 /* Popular */
 
@@ -292,7 +287,6 @@ main {
   flex-direction: column;
   justify-content: flex-start;
   gap: 25px;
-
 }
 
 .popular__title-line {
@@ -305,7 +299,6 @@ main {
 .popular__title {
   font-size: 16px;
   margin: 0;
-  
 }
 
 .popular__list {
@@ -316,7 +309,6 @@ main {
   gap: 25px;
   margin: 0;
   flex: 1;
-  
 }
 .popular__card__link {
   flex: 1;
@@ -333,7 +325,6 @@ main {
   flex-direction: row;
   flex-wrap: nowrap;
   height: 100%;
-
 }
 
 .popular__card:hover {
@@ -356,7 +347,6 @@ main {
   align-items: baseline;
   gap: 5px;
   min-width: 70px;
-
 }
 
 .popular__card__title {
@@ -364,11 +354,10 @@ main {
   flex: 0;
   margin: 0;
 }
-  .popular__card__price {
-    flex: 1;
-    margin:auto 0;
-       
-  }
+.popular__card__price {
+  flex: 1;
+  margin: auto 0;
+}
 
 .popular__card__rating {
   font-size: 11px;
@@ -379,7 +368,6 @@ main {
 /* Activities */
 
 section.activities {
- 
   padding: 25px 0;
   display: flex;
   flex-direction: column;
@@ -391,7 +379,7 @@ section.activities {
   margin: 0;
   padding: 10px 0;
 }
-.activities__list{
+.activities__list {
   list-style-type: none;
   display: flex;
   justify-content: space-evenly;
@@ -401,7 +389,7 @@ section.activities {
   align-content: stretch;
 }
 
-.activities__link{
+.activities__link {
   flex: 1 25%;
   width: 20%;
 }
@@ -413,7 +401,6 @@ section.activities {
   padding-bottom: 5px;
   height: 100%;
   width: 100%;
-
 }
 
 .activities__card:hover {
@@ -426,13 +413,11 @@ section.activities {
   object-fit: cover;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
- 
 }
 .activities__card__title {
   font-size: 12px;
   margin: 0;
   padding-left: 10px;
-
 }
 
 /* Footer */
@@ -444,7 +429,6 @@ footer {
   padding: 25px 0;
 }
 
-
 .footer__list {
   font-size: 10px;
   text-align: left;
@@ -452,13 +436,12 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  
+
   gap: 10px;
   flex: 1 30%;
-
 }
 
-.footer__title{
+.footer__title {
   font-size: 10px;
   margin: 0;
 }
