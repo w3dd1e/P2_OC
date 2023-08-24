@@ -15,6 +15,7 @@ main,
 .footer__container {
 	max-width: 1200px;
 	margin: auto;
+	padding: 0 30px;
 }
 
 a {
@@ -61,22 +62,19 @@ p {
 
 /*    NAVIGATION BAR */
 
-nav {
-	padding: 0 30px;
-}
 .navbar {
-	padding: 0;
 	display: flex;
 	margin: 0;
 	list-style-type: none;
 	gap: 50px;
 	height: 50px;
-	align-items: stretch;
+	padding: 0;
 }
 
 .navbar__logo {
 	margin-right: auto;
-	padding-top: 20px;
+	padding: 20px 0;
+	height: 100%;
 }
 
 .navbar__logo__img {
@@ -97,27 +95,23 @@ nav {
 
 /*    TAGLINE   */
 
+.tagline__container {
+	margin: 20px 0;
+	padding: 0;
+}
 .tagline--big {
 	font-size: 14px;
-	padding: 10px 30px 5px 30px;
-	margin-bottom: 0;
 }
 
 .tagline--small {
-	padding: 0 30px;
-	margin-top: 0;
+	margin: 0;
 }
 
 /*    MAIN    */
 
-main {
-	padding: 30px;
-}
-
 /*    SEARCH    */
 
 .search {
-	margin-bottom: 30px;
 	font-size: 14px;
 	display: flex;
 	align-items: baseline;
@@ -144,7 +138,6 @@ main {
 	border: 1px solid #f2f2f2;
 	position: absolute;
 	height: 100%;
-	margin-left: 1px;
 }
 
 /* Shows submit button with text */
@@ -169,6 +162,7 @@ main {
 /*    FILTERS   */
 
 .filters {
+	margin: 20px 0;
 	font-size: 13px;
 	display: flex;
 	align-items: baseline;
@@ -218,19 +212,21 @@ main {
 }
 
 .information {
-	margin: 0;
-	padding: 25px 0;
-	width: 40%;
+	margin: 10px 0;
+	width: 28%;
 	display: flex;
+	align-items: baseline;
 }
 
 .info__icon {
 	border: 2px solid #f2f2f2;
-	padding: 5px 10px;
+	padding: 3px 5px;
 	border-radius: 50%;
 	color: #0065fc;
-	margin: 10px;
-	font-size: 12px;
+	font-size: 8px;
+}
+.information__text {
+	margin-left: 10px;
 }
 
 /*    RESULTS   */
@@ -280,10 +276,6 @@ main {
 	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
-.card__title {
-	margin: 0;
-	flex: 0;
-}
 
 .card__img--vertical {
 	border-top-left-radius: 10px;
@@ -304,19 +296,26 @@ main {
 .card__desc {
 	display: flex;
 	flex-direction: column;
-	align-items: baseline;
+	justify-content: space-evenly;
 	gap: 5px;
+	flex: 1;
+	padding-left: 10px;
+
+}
+.card__title {
+	margin: 0;
+	flex: 1;
 }
 
 .card__price {
 	flex: 1;
 	margin: auto 0;
-	font-size: 11px;
+	flex-basis: 30%;
 }
 .card__rating {
 	font-size: 11px;
 	margin: 0;
-	flex: 0;
+	flex: 1;
 }
 
 /*    ACCOMMODATIONS    */
@@ -347,8 +346,6 @@ main {
 
 .accommodations__card__desc {
 	flex: 1 auto;
-	justify-content: flex-start;
-	padding-left: 10px;
 }
 
 .more {
@@ -394,6 +391,7 @@ main {
 .popular__card__desc {
 	flex: 2;
 	min-width: 75px;
+	padding-top: 10px;
 }
 
 /*    ACTIVITIES    */
@@ -402,7 +400,7 @@ main {
 items underneath use column flex and will overflow without it.*/
 
 .activities {
-	padding: 25px 0;
+	margin: 30px 0;
 	display: flex;
 	flex-direction: column;
 	gap: 5px;
@@ -475,28 +473,28 @@ footer {
 }
 .footer__container {
 	display: flex;
-	padding: 25px 0;
 	justify-content: flex-start;
+	padding-top: 25px;
+	padding-bottom: 25px;
 }
 
 .footer__list {
-	font-size: 10px;
+	font-size: 12px;
 	text-align: left;
 	list-style-type: none;
 	display: flex;
 	flex-direction: column;
 	gap: 10px;
 	flex: 1;
+	padding: 0;
 }
 
 .footer__title {
-	font-size: 10px;
 	margin: 0;
 }
 
 /*		TABLETS		*/
 @media only screen and (min-device-width: 768px) and (max-device-width: 992px) {
-
 	/* Hides submit button with text */
 	.search__button--submit {
 		display: none;
@@ -522,10 +520,8 @@ footer {
 	}
 
 	.card__img--horizontal {
-	
 		object-fit: cover;
 		max-height: 100px;
-
 	}
 
 	.popular__list {
@@ -539,8 +535,6 @@ footer {
 
 	.activities__list {
 		flex-direction: row;
-		
-		
 	}
 
 	.activities__link:first-child {
@@ -548,10 +542,8 @@ footer {
 		max-height: 100%;
 	}
 	.activities__img {
-	
 		object-position: center;
 	}
-	
 }
 
 /*		MOBILE		*/
@@ -562,6 +554,7 @@ footer {
 	main,
 	.footer__container {
 		margin: 0;
+		padding: 0;
 	}
 
 	h2 {
@@ -597,10 +590,10 @@ footer {
 	}
 
 	.navbar__logo {
-		margin: 0 auto;
 		width: 100%;
 		display: flex;
-		height: 50%;
+		height: 40%;
+		padding: 0;
 	}
 	.logo__link {
 		text-align: center;
@@ -674,7 +667,7 @@ footer {
 		background-color: #0065fc;
 		color: white;
 		padding: 20px;
-		border-radius: 20px;
+		border-radius: 25%;
 		border: none;
 		font-weight: 700;
 		border: 1px solid #0065fc;
@@ -743,11 +736,7 @@ footer {
 	}
 
 	.card__title {
-		flex: 1;
-	}
-
-	.card__desc {
-		justify-content: space-around;
+		flex: 1 30%;
 	}
 
 	.card__price {
@@ -755,10 +744,18 @@ footer {
 	}
 
 	.card__rating {
-		flex: 1;
+		flex: 1 30%;
 	}
 
 	/*    POPULAR   */
+
+	.popular__card__desc {
+		justify-content: space-around;
+	}
+
+	.popular__img {
+		height: 120px;
+	}
 
 	/*    ACCOMMODATIONS    */
 
@@ -767,7 +764,6 @@ footer {
 	}
 	.accommodations__list {
 		flex-direction: column;
-		
 	}
 
 	/*    ACTIVITIES    */
@@ -820,7 +816,8 @@ items underneath use column flex and will overflow without it.*/
 
 	.footer__container {
 		flex-direction: column;
-		padding-top: 10px;
+		padding-top: 20px;
+		padding-bottom: 20px;
 		margin: 0 20px;
 	}
 
@@ -830,5 +827,5 @@ items underneath use column flex and will overflow without it.*/
 	}
 	.footer__title {
 		font-size: 14px;
-		)
+	}
 }

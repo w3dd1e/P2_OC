@@ -3,18 +3,18 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Booki - Marseille</title>
 
-    <link rel="stylesheet" href="normalize.css" />
+		<!--Normalize-->
+		<link rel="stylesheet" href="normalize.css" />
 
-    	<!-- Google Fonts Raleway -->
+		<!-- Google Fonts Raleway -->
 		<link
-    rel="stylesheet"
-    href="https://fonts.googleapis.com/css?family=Raleway"
-  />
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css?family=Raleway"
+		/>
 
 		<link rel="stylesheet" href="styles.css" />
-		
+
 		<!-- FontAwesome Icons-->
 
 		<script
@@ -22,7 +22,7 @@
 			crossorigin="anonymous"
 		></script>
 
-	
+		<title>Booki - Marseille</title>
 	</head>
 	<body>
 		<!--    HEADER   -->
@@ -31,11 +31,13 @@
 			<nav>
 				<ul class="navbar">
 					<li class="navbar__logo">
-						<a class="logo__link" href="#"><img
-							class="navbar__logo__img"
-							src="./images/logo/Booki.png"
-							alt="Booki logo"
-						/></a>
+						<a class="logo__link" href="#">
+							<img
+								class="navbar__logo__img"
+								src="./images/logo/Booki.png"
+								alt="Booki logo"
+							/>
+						</a>
 					</li>
 					<li class="navbar__link navbar__link--active">
 						<a href="#accommodations">Accommodations</a>
@@ -47,9 +49,12 @@
 			</nav>
 
 			<!--    TAGLINE   -->
-
-			<h1 class="tagline--big">Find a place for your dream vacation</h1>
-			<p class="tagline--small">Downtown or in nature</p>
+			<div class="tagline__container">
+				<h1 class="tagline--big">
+					Find a place for your dream vacation
+				</h1>
+				<p class="tagline--small">Downtown or in nature</p>
+			</div>
 		</header>
 
 		<main>
@@ -64,8 +69,12 @@
 					placeholder="Marseille, France"
 					class="search__input"
 				/>
-				<button type="submit" class="search__button--submit">Search</button>
-				<button type="submit" class="search__button--magglass"><i class="fa-solid fa-magnifying-glass"></i></button>
+				<button type="submit" class="search__button--submit">
+					Search
+				</button>
+				<button type="submit" class="search__button--magglass">
+					<i class="fa-solid fa-magnifying-glass"></i>
+				</button>
 			</form>
 
 			<!--    FILTERS   -->
@@ -102,10 +111,12 @@
 			<!--    MAIN    -->
 
 			<div class="results__container">
-
 				<!--    ACCOMMODATIONS   -->
 
-				<section id ="accommodations" class="accommodations results__sections">
+				<section
+					id="accommodations"
+					class="accommodations results__sections"
+				>
 					<div class="accommodations__title-line title-line">
 						<h2 class="accommodations__title section__title">
 							Accomodations in Marseille
@@ -132,14 +143,24 @@
 									>
 										Night starting at 25E
 									</p>
-									<p 
-                  class="accommodations__card__rating card__rating"
-                  >
-										<i class="fa-solid fa-star star--full"></i>
-										<i class="fa-solid fa-star star--full"></i>
-                    <i class="fa-solid fa-star star--full"></i>
-										<i class="fa-solid fa-star star--full"></i>
-										<i class="fa-solid fa-star star--empty"></i>
+									<p
+										class="accommodations__card__rating card__rating"
+									>
+										<i
+											class="fa-solid fa-star star--full"
+										></i>
+										<i
+											class="fa-solid fa-star star--full"
+										></i>
+										<i
+											class="fa-solid fa-star star--full"
+										></i>
+										<i
+											class="fa-solid fa-star star--full"
+										></i>
+										<i
+											class="fa-solid fa-star star--empty"
+										></i>
 									</p>
 								</div>
 							</article>
@@ -168,11 +189,21 @@
 									<p
 										class="accommodations__card__rating card__rating"
 									>
-										<i class="fa-solid fa-star star--full"></i>
-										<i class="fa-solid fa-star star--full"></i>
-										<i class="fa-solid fa-star star--full"></i>
-										<i class="fa-solid fa-star star--full"></i>
-										<i class="fa-solid fa-star star--full"></i>
+										<i
+											class="fa-solid fa-star star--full"
+										></i>
+										<i
+											class="fa-solid fa-star star--full"
+										></i>
+										<i
+											class="fa-solid fa-star star--full"
+										></i>
+										<i
+											class="fa-solid fa-star star--full"
+										></i>
+										<i
+											class="fa-solid fa-star star--full"
+										></i>
 									</p>
 								</div>
 							</article>
@@ -201,11 +232,21 @@
 									<p
 										class="accommodations__card__rating card__rating"
 									>
-										<i class="fa-solid fa-star star--full"></i>
-										<i class="fa-solid fa-star star--full"></i>
-										<i class="fa-solid fa-star star--full"></i>
-										<i class="fa-solid fa-star star--full"></i>
-										<i class="fa-solid fa-star star--empty"></i>
+										<i
+											class="fa-solid fa-star star--full"
+										></i>
+										<i
+											class="fa-solid fa-star star--full"
+										></i>
+										<i
+											class="fa-solid fa-star star--full"
+										></i>
+										<i
+											class="fa-solid fa-star star--full"
+										></i>
+										<i
+											class="fa-solid fa-star star--empty"
+										></i>
 									</p>
 								</div>
 							</article>
@@ -234,11 +275,21 @@
 									<p
 										class="accommodations__card__rating card__rating"
 									>
-										<i class="fa-solid fa-star star--full"></i>
-										<i class="fa-solid fa-star star--full"></i>
-										<i class="fa-solid fa-star star--full"></i>
-										<i class="fa-solid fa-star star--empty"></i>
-										<i class="fa-solid fa-star star--empty"></i>
+										<i
+											class="fa-solid fa-star star--full"
+										></i>
+										<i
+											class="fa-solid fa-star star--full"
+										></i>
+										<i
+											class="fa-solid fa-star star--full"
+										></i>
+										<i
+											class="fa-solid fa-star star--empty"
+										></i>
+										<i
+											class="fa-solid fa-star star--empty"
+										></i>
 									</p>
 								</div>
 							</article>
@@ -267,11 +318,21 @@
 									<p
 										class="accommodations__card__rating card__rating"
 									>
-										<i class="fa-solid fa-star star--full"></i>
-										<i class="fa-solid fa-star star--full"></i>
-										<i class="fa-solid fa-star star--full"></i>
-										<i class="fa-solid fa-star star--full"></i>
-										<i class="fa-solid fa-star star--empty"></i>
+										<i
+											class="fa-solid fa-star star--full"
+										></i>
+										<i
+											class="fa-solid fa-star star--full"
+										></i>
+										<i
+											class="fa-solid fa-star star--full"
+										></i>
+										<i
+											class="fa-solid fa-star star--full"
+										></i>
+										<i
+											class="fa-solid fa-star star--empty"
+										></i>
 									</p>
 								</div>
 							</article>
@@ -300,11 +361,21 @@
 									<p
 										class="accommodations__card__rating card__rating"
 									>
-										<i class="fa-solid fa-star star--full"></i>
-										<i class="fa-solid fa-star star--full"></i>
-										<i class="fa-solid fa-star star--full"></i>
-										<i class="fa-solid fa-star star--full"></i>
-										<i class="fa-solid fa-star star--full"></i>
+										<i
+											class="fa-solid fa-star star--full"
+										></i>
+										<i
+											class="fa-solid fa-star star--full"
+										></i>
+										<i
+											class="fa-solid fa-star star--full"
+										></i>
+										<i
+											class="fa-solid fa-star star--full"
+										></i>
+										<i
+											class="fa-solid fa-star star--full"
+										></i>
 									</p>
 								</div>
 							</article>
@@ -313,7 +384,7 @@
 					<a class="more" href="#"> Show more </a>
 				</section>
 
-			<!--    ASIDE   -->
+				<!--    ASIDE   -->
 
 				<!--    POPULAR   -->
 
@@ -344,11 +415,21 @@
 									<p
 										class="popular__card__rating card__rating"
 									>
-										<i class="fa-solid fa-star star--full"></i>
-										<i class="fa-solid fa-star star--full"></i>
-										<i class="fa-solid fa-star star--full"></i>
-										<i class="fa-solid fa-star star--full"></i>
-										<i class="fa-solid fa-star star--full"></i>
+										<i
+											class="fa-solid fa-star star--full"
+										></i>
+										<i
+											class="fa-solid fa-star star--full"
+										></i>
+										<i
+											class="fa-solid fa-star star--full"
+										></i>
+										<i
+											class="fa-solid fa-star star--full"
+										></i>
+										<i
+											class="fa-solid fa-star star--full"
+										></i>
 									</p>
 								</div>
 							</article>
@@ -362,21 +443,32 @@
 									alt="Au coeur de l'eau Bed and Breakfast"
 								/>
 								<div class="popular__card__desc card__desc">
-									<h3 
-                  class="popular__card__title card__title">
+									<h3
+										class="popular__card__title card__title"
+									>
 										Au coeur de l'eau Bed and Breakfast
 									</h3>
-									<p 
-                  class="popular__card__price card__price">
+									<p class="popular__card__price card__price">
 										Night starting at 71E
 									</p>
-									<p class="popular__card__rating card__rating"
-									  >
-										<i class="fa-solid fa-star star--full"></i>
-										<i class="fa-solid fa-star star--full"></i>
-										<i class="fa-solid fa-star star--full"></i>
-										<i class="fa-solid fa-star star--full"></i>
-										<i class="fa-solid fa-star star--empty"></i>
+									<p
+										class="popular__card__rating card__rating"
+									>
+										<i
+											class="fa-solid fa-star star--full"
+										></i>
+										<i
+											class="fa-solid fa-star star--full"
+										></i>
+										<i
+											class="fa-solid fa-star star--full"
+										></i>
+										<i
+											class="fa-solid fa-star star--full"
+										></i>
+										<i
+											class="fa-solid fa-star star--empty"
+										></i>
 									</p>
 								</div>
 							</article>
@@ -391,19 +483,31 @@
 								/>
 								<div class="popular__card__desc card__desc">
 									<h3
-										class="popular__card__title card__title">
+										class="popular__card__title card__title"
+									>
 										Tout blue et Blanc Hotel
 									</h3>
 									<p class="popular__card__price card__price">
 										Night starting at 68E
 									</p>
-									<p class="popular__card__rating card__rating"
-                    >
-										<i class="fa-solid fa-star star--full" ></i>
-										<i class="fa-solid fa-star star--full" ></i>
-										<i class="fa-solid fa-star star--full" ></i>
-										<i class="fa-solid fa-star star--full" ></i>
-										<i class="fa-solid fa-star star--empty"></i>
+									<p
+										class="popular__card__rating card__rating"
+									>
+										<i
+											class="fa-solid fa-star star--full"
+										></i>
+										<i
+											class="fa-solid fa-star star--full"
+										></i>
+										<i
+											class="fa-solid fa-star star--full"
+										></i>
+										<i
+											class="fa-solid fa-star star--full"
+										></i>
+										<i
+											class="fa-solid fa-star star--empty"
+										></i>
 									</p>
 								</div>
 							</article>
@@ -418,7 +522,9 @@
 					Activities in Marseille
 				</h2>
 				<div class="activities__container">
-					<div class="activities__list results__list activities__column--1">
+					<div
+						class="activities__list results__list activities__column--1"
+					>
 						<a
 							class="activities__link activities__link--large"
 							href="#"
@@ -440,7 +546,7 @@
 						>
 							<article class="activities__card card">
 								<img
-                  id="pomeguesfort"
+									id="pomeguesfort"
 									class="activities__img card__img--vertical"
 									src="./images/activites/4_small/pomeguesfort.jpg"
 									alt="Pomegues Fort"
@@ -467,7 +573,9 @@
 						</a>
 					</div>
 
-					<div class="activities__list results__list activities__column--2">
+					<div
+						class="activities__list results__list activities__column--2"
+					>
 						<a
 							class="activities__link activities__link--large"
 							href="#"
@@ -520,6 +628,7 @@
 
 		<!--    FOOTER    -->
 		<footer>
+			<!-- footer__container keeps footer content centered, with out shrinking background-->
 			<div class="footer__container">
 				<ul class="footer__list">
 					<li><h4 class="footer__title">About</h4></li>
