@@ -1,5 +1,5 @@
 # Booki Travel Site
-Project #2 Web Development - Open lassrooms
+Project #2 Web Development - Open Classrooms
 
 I completed this project during the OpenClassrooms using HTML and CSS only. I coded it in VSCode and processed commits using Git via Linux on Windows with WSL. 
 
